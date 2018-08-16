@@ -30,7 +30,7 @@ public class MainThread {
             choice = new Scanner(System.in).nextInt();
             switch (choice) {
                 case 1:
-                    controller.addProduct();
+                    controller.sellProduct();
                     break;
                 case 2:
                     controller.getList();

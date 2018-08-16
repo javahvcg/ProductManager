@@ -18,7 +18,7 @@ public class ProductController {
     private Scanner s = new Scanner(System.in);
     private ArrayList<Product> list = new ArrayList<>();
 
-    public void addProduct() {
+    public void sellProduct() {
 
         int n = new Scanner(System.in).nextInt();
         for (int i = 0; i < n; i++) {
@@ -44,12 +44,6 @@ public class ProductController {
 //        list.add(b);
     }
 
-
-    public static void main(String[] args) {
-        ProductController controller = new ProductController();
-        controller.addProduct();
-
-    }
 
     public ArrayList<Product> getList() {
         for (int i = 0; i < list.size(); i++) {
