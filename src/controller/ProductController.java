@@ -5,7 +5,6 @@
  */
 package controller;
 
-import entities.Bill;
 import entities.Product;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -28,14 +27,16 @@ public class ProductController {
             System.out.println("Enter quantity product" + (i + 1) + ":");
             System.out.println("Enter id :");
             String id = new Scanner(System.in).nextLine();
-            System.out.println("Enter count :");
-            int count = new Scanner(System.in).nextInt();
             System.out.println("Enter price :");
             float price = new Scanner(System.in).nextFloat();
             System.out.println("Enter name  :");
             String name = new Scanner(System.in).nextLine();
             System.out.println("Enter created at  :");
             String createdAt = new Scanner(System.in).nextLine();
+            p.setId(id);
+            p.setPrice(price);
+            p.setNameEmployee(name);
+            p.setCreatedAt(createdAt);
             list.add(p);
         }
 
@@ -47,6 +48,12 @@ public class ProductController {
 //        list.add(b);
     }
 
+    public static void main(String[] args) {
+        ProductController controller = new ProductController();
+        controller.addProduct();
+
+    }
+
     public ArrayList<Product> getList() {
         for (int i = 0; i < list.size(); i++) {
             Product temp = list.get(i);
@@ -54,4 +61,5 @@ public class ProductController {
         }
         return list;
     }
+
 }

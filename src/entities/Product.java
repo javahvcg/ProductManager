@@ -13,17 +13,15 @@ public class Product {
 
     private String id;
     private float price;
-    private int count;
     private String nameEmployee;
     private String createdAt;
 
     public Product() {
     }
 
-    public Product(String id, float price, int count, String nameEmployee, String createdAt) {
+    public Product(String id, float price,  String nameEmployee, String createdAt) {
         this.id = id;
         this.price = price;
-        this.count = count;
         this.nameEmployee = nameEmployee;
         this.createdAt = createdAt;
     }
@@ -61,17 +59,10 @@ public class Product {
         this.price = price;
     }
 
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
 
     @Override
     public String toString() {
-        return "Product{" + "id=" + id + ", price=" + price + ", count=" + count + ", nameEmployee=" + nameEmployee + ", createdAt=" + createdAt + '}';
+        return "Product{" + "id=" + id + ", price=" + price +  ", nameEmployee=" + nameEmployee + ", createdAt=" + createdAt + '}';
     }
 
 }
