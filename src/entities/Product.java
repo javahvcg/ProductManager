@@ -9,7 +9,7 @@ package entities;
  *
  * @author anhquan12
  */
-public class Product {
+public class Product implements Comparable<Product>{
 
     private String id;
     private float price;
@@ -63,6 +63,11 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" + "id=" + id + ", price=" + price +  ", nameEmployee=" + nameEmployee + ", createdAt=" + createdAt + '}';
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        return 0;
     }
 
 }
