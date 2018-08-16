@@ -49,5 +49,10 @@ public class Product {
         this.bill = bill;
     }
 
+    @Override
+    public String toString() {
+        return "Product{" + "id=" + id + ", price=" + price + ", bill=" + bill + '}';
+    }
+
     
 }
