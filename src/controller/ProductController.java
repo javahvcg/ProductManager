@@ -35,13 +35,6 @@ public class ProductController {
             String createdAt = new Scanner(System.in).nextLine();
             list.add(p);
         }
-
-//        Bill b = new Bill();
-//        System.out.println("Enter nameEmployee :");
-//        String name = new Scanner(System.in).nextLine();
-//        System.out.println("Enter createdAt :");
-//        String createdAt = new Scanner(System.in).nextLine();
-//        list.add(b);
     }
 
 
