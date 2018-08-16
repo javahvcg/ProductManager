@@ -33,10 +33,6 @@ public class ProductController {
             String name = new Scanner(System.in).nextLine();
             System.out.println("Enter created at  :");
             String createdAt = new Scanner(System.in).nextLine();
-            p.setId(id);
-            p.setPrice(price);
-            p.setNameEmployee(name);
-            p.setCreatedAt(createdAt);
             list.add(p);
         }
 
@@ -47,6 +43,7 @@ public class ProductController {
 //        String createdAt = new Scanner(System.in).nextLine();
 //        list.add(b);
     }
+
 
     public static void main(String[] args) {
         ProductController controller = new ProductController();
@@ -61,5 +58,6 @@ public class ProductController {
         }
         return list;
     }
+    
 
 }

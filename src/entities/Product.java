@@ -9,39 +9,21 @@ package entities;
  *
  * @author anhquan12
  */
-public class Product implements Comparable<Product>{
+public class Product {
 
     private String id;
     private float price;
-    private String nameEmployee;
-    private String createdAt;
+    private Bill bill;
 
     public Product() {
     }
 
-    public Product(String id, float price,  String nameEmployee, String createdAt) {
+    public Product(String id, float price, Bill bill) {
         this.id = id;
         this.price = price;
-        this.nameEmployee = nameEmployee;
-        this.createdAt = createdAt;
+        this.bill = bill;
     }
-
-    
-    public String getNameEmployee() {
-        return nameEmployee;
-    }
-
-    public void setNameEmployee(String nameEmployee) {
-        this.nameEmployee = nameEmployee;
-    }
-
-    public String getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
-    }
+     
 
     public String getId() {
         return id;
@@ -59,15 +41,13 @@ public class Product implements Comparable<Product>{
         this.price = price;
     }
 
-
-    @Override
-    public String toString() {
-        return "Product{" + "id=" + id + ", price=" + price +  ", nameEmployee=" + nameEmployee + ", createdAt=" + createdAt + '}';
+    public Bill getBill() {
+        return bill;
     }
 
-    @Override
-    public int compareTo(Product o) {
-        return 0;
+    public void setBill(Bill bill) {
+        this.bill = bill;
     }
 
+    
 }
